@@ -1,7 +1,7 @@
 import * as assert from 'assert';
 import * as vscode from 'vscode';
 
-suite('Extension Test Suite', () => {
+suite('Extension Activation', () => {
    let extension: vscode.Extension<any>;
    const timeout = async (ms = 200) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -9,7 +9,7 @@ suite('Extension Test Suite', () => {
       extension = vscode.extensions.getExtension('k-kuroguro.extension-name') as vscode.Extension<any>;
    });
 
-   test('Activation test', async () => {
+   test('Activate extension', async () => {
       await extension.activate();
       assert.strictEqual(extension.isActive, true);
    });
