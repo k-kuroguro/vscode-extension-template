@@ -1,12 +1,17 @@
 import * as assert from 'assert';
-import * as vscode from 'vscode';
+import {
+   Extension,
+   extensions
+} from 'vscode';
+
+import { extensionName, extensionPublisher } from '../../constants';
 
 suite('Extension Activation', () => {
-   let extension: vscode.Extension<any>;
+   let extension: Extension<any>;
    const timeout = async (ms = 200) => new Promise(resolve => setTimeout(resolve, ms));
 
    suiteSetup(() => {
-      extension = vscode.extensions.getExtension('k-kuroguro.extension-name') as vscode.Extension<any>;
+      extension = extensions.getExtension(`${extensionPublisher}.${extensionName}`) as Extension<any>;
    });
 
    test('Activate extension', async () => {
