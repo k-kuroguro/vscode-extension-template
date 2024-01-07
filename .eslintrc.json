@@ -12,42 +12,22 @@
       "@typescript-eslint/naming-convention": [
          "warn",
          {
-            "selector": "variable",
+            "selector": "import",
             "format": [
                "camelCase",
-               "PascalCase",
-               "UPPER_CASE"
-            ],
-            "leadingUnderscore": "allowDouble"
+               "PascalCase"
+            ]
          }
       ],
       "@typescript-eslint/semi": "warn",
+      "curly": "warn",
       "eqeqeq": "warn",
       "no-throw-literal": "warn",
-      "eol-last": [
-         "warn",
-         "always"
-      ],
-      "indent": [
-         "warn",
-         3,
-         {
-            "SwitchCase": 1
-         }
-      ],
-      "multiline-comment-style": [
-         "warn",
-         "separate-lines"
-      ],
-      "no-array-constructor": "warn",
-      "no-trailing-spaces": "warn",
-      "quotes": [
-         "warn",
-         "single"
-      ],
       "semi": "off"
    },
    "ignorePatterns": [
+      "out",
+      "dist",
       "**/*.d.ts"
    ]
 }

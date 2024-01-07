@@ -22,5 +22,4 @@
 
 # Publish
 
-1. Publish by below command.
-   `vsce publish`
+Create new release on GitHub and publish to VSCode Marketplace automatically.

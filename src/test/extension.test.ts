@@ -4,7 +4,7 @@ import {
    extensions
 } from 'vscode';
 
-import { extensionName, extensionPublisher } from '../../constants';
+import { extensionName, extensionPublisher } from '../constants';
 
 suite('Extension Activation', () => {
    let extension: Extension<any>;

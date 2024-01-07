@@ -1,16 +1,13 @@
-name: Test and Deploy
+name: Deploy
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types:
+      - created
 
 jobs:
-  test-and-deploy:
-    strategy:
-      matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+  deploy:
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -24,7 +21,7 @@ jobs:
     - run: npm test
       if: runner.os != 'Linux'
     - name: Publish
-      if: success() && startsWith(github.ref, 'refs/tags/') && matrix.os == 'ubuntu-latest'
+      if: success() && startsWith(github.ref, 'refs/tags/')
       run: npm run deploy
       env:
         VSCE_PAT: ${{ secrets.VSCE_PAT }}
