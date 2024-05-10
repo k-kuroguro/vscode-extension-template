@@ -3,7 +3,7 @@
 [![CI](https://github.com/k-kuroguro/vscode-extension-template/actions/workflows/main.yaml/badge.svg)](https://github.com/k-kuroguro/vscode-extension-template/actions/workflows/main.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Setup
+## Setup
 
 1. Change extension name in below files.
    - `package.json`
@@ -20,6 +20,6 @@
 
 2. Execute `npm i` for installing node modules and remake `package-lock.json`.
 
-# Publish
+## Publish
 
 Create new release on GitHub and publish to VSCode Marketplace automatically.
