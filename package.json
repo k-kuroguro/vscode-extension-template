@@ -6,7 +6,7 @@
    "version": "0.0.1",
    "icon": "resources/icon.png",
    "engines": {
-      "vscode": "^1.85.0"
+      "vscode": "^1.96.0"
    },
    "categories": [
       "Other"
@@ -46,18 +46,18 @@
       "deploy": "vsce publish --no-yarn"
    },
    "devDependencies": {
-      "@types/mocha": "^10.0.6",
-      "@types/node": "18.x",
-      "@types/vscode": "^1.85.0",
+      "@types/mocha": "^10.0.10",
+      "@types/node": "20.x",
+      "@types/vscode": "^1.96.0",
       "@typescript-eslint/eslint-plugin": "^6.15.0",
       "@typescript-eslint/parser": "^6.15.0",
-      "@vscode/test-cli": "^0.0.4",
-      "@vscode/test-electron": "^2.3.8",
+      "@vscode/test-cli": "^0.0.10",
+      "@vscode/test-electron": "^2.4.1",
       "@vscode/vsce": "^2.22.0",
       "eslint": "^8.56.0",
       "ts-loader": "^9.5.1",
-      "typescript": "^5.3.3",
-      "webpack": "^5.89.0",
+      "typescript": "^5.7.2",
+      "webpack": "^5.95.0",
       "webpack-cli": "^5.1.4"
    }
 }
