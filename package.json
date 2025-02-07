@@ -12,7 +12,7 @@
       "Other"
    ],
    "license": "MIT",
-   "homepage": "https://github.com/k-kuroguro/vscode-extension-template/blob/master/README.md",
+   "homepage": "https://github.com/k-kuroguro/vscode-extension-template/blob/main/README.md",
    "repository": {
       "type": "git",
       "url": "https://github.com/k-kuroguro/vscode-extension-template.git"
