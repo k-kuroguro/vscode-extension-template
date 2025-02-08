@@ -17,6 +17,7 @@
       - badge of github actions
    - `src/constants.ts`
       - extensionName
+      - extensionDisplayName
 
 2. Execute `npm i` for installing node modules and remake `package-lock.json`.
 

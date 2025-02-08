@@ -1,4 +1,6 @@
 const extensionName = 'extension-name';
+const extensionDisplayName = 'Extension Name';
 const extensionPublisher = 'k-kuroguro';
 
-export { extensionName, extensionPublisher };
+export { extensionDisplayName, extensionName, extensionPublisher };
+
