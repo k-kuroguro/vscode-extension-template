@@ -23,7 +23,7 @@
 
 ## Publish
 
-To publish to **Open VSX Registry** and **VS Code Marketplace**, create a **GitHub release**.
+To publish to Open VSX Registry and VS Code Marketplace, create a GitHub release.
 
 Make sure to add the following secrets to the repository:
 - `VS_MARKETPLACE_TOKEN`
