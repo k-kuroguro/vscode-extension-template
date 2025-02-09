@@ -1,14 +1,12 @@
 import * as vscode from 'vscode';
 import { extensionDisplayName } from './constants';
-import { getLogger, initializeLogger } from './logger';
+import { Logger } from './logger';
 
 export function activate(context: vscode.ExtensionContext) {
    const disposables: vscode.Disposable[] = [];
 
-   const channel = vscode.window.createOutputChannel(extensionDisplayName, { log: true });
-   disposables.push(initializeLogger(channel));
-
-   const logger = getLogger();
+   const logger = new Logger();
+   disposables.push(logger);
    logger.info(`"${extensionDisplayName}" is now active!`);
 
    disposables.push(
