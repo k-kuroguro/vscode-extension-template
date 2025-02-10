@@ -2,7 +2,14 @@ import * as util from 'util';
 import { LogOutputChannel, window } from 'vscode';
 import { extensionDisplayName } from './constants';
 
-export class Logger {
+export interface Logger {
+   debug(...data: unknown[]): void;
+   info(...data: unknown[]): void;
+   warn(...data: unknown[]): void;
+   error(...data: unknown[]): void;
+}
+
+export class OutputChannelLogger implements Logger {
    private readonly channel: LogOutputChannel;
 
    constructor() {
