@@ -1,5 +1,5 @@
-import * as util from 'util';
-import { LogOutputChannel, window } from 'vscode';
+import * as util from 'node:util';
+import { type LogOutputChannel, window } from 'vscode';
 import { extensionDisplayName } from './constants';
 
 export interface Logger {

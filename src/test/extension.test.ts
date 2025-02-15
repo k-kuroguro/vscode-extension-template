@@ -1,17 +1,14 @@
-import * as assert from 'assert';
-import {
-   Extension,
-   extensions
-} from 'vscode';
+import * as assert from 'node:assert';
+import { type Extension, extensions } from 'vscode';
 
 import { extensionName, extensionPublisher } from '../constants';
 
 suite('Extension Activation', () => {
-   let extension: Extension<any>;
-   const timeout = async (ms = 200) => new Promise(resolve => setTimeout(resolve, ms));
+   let extension: Extension<unknown>;
+   const timeout = async (ms = 200) => new Promise((resolve) => setTimeout(resolve, ms));
 
    suiteSetup(() => {
-      extension = extensions.getExtension(`${extensionPublisher}.${extensionName}`) as Extension<any>;
+      extension = extensions.getExtension(`${extensionPublisher}.${extensionName}`) as Extension<unknown>;
    });
 
    test('Activate extension', async () => {

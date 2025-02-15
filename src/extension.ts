@@ -12,10 +12,10 @@ export function activate(context: vscode.ExtensionContext) {
    disposables.push(
       vscode.commands.registerCommand('extension-name.helloWorld', () => {
          vscode.window.showInformationMessage('Hello World!');
-      })
+      }),
    );
 
    context.subscriptions.push(...disposables);
 }
 
-export function deactivate() { }
+export function deactivate() {}
