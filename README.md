@@ -21,6 +21,12 @@
 
 2. Execute `npm i` for installing node modules and remake `package-lock.json`.
 
+3. Install hooks.
+
+   ```sh
+   $ npx lefthook install
+   ```
+
 ## Publish
 
 To publish to Open VSX Registry and VS Code Marketplace, create a GitHub release.

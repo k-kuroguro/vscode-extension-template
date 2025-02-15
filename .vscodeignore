@@ -11,3 +11,4 @@ webpack.config.js
 **/*.ts
 **/.vscode-test.*
 biome.json
+lefthook.yaml
