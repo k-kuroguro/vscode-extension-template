@@ -2,8 +2,8 @@ import * as vscode from 'vscode';
 import { extensionName } from './constants';
 
 export class Config {
-   private _onDidChangeConfig: vscode.EventEmitter<Config.ConfigItems | undefined> = new vscode.EventEmitter<Config.ConfigItems | undefined>();
-   readonly onDidChangeConfig: vscode.Event<Config.ConfigItems | undefined> = this._onDidChangeConfig.event;
+   private _onDidChangeConfig: vscode.EventEmitter<Config.ConfigItems> = new vscode.EventEmitter<Config.ConfigItems>();
+   readonly onDidChangeConfig: vscode.Event<Config.ConfigItems> = this._onDidChangeConfig.event;
 
    private static instance: Config = new Config();
    private workspaceConfig: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration(extensionName);
