@@ -13,7 +13,7 @@
       "enabled": true,
       "formatWithErrors": true,
       "lineEnding": "lf",
-      "lineWidth": 120
+      "lineWidth": 200
    },
    "organizeImports": {
       "enabled": true
