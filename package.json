@@ -31,7 +31,18 @@
             "title": "Hello World",
             "category": "Extension Name"
          }
-      ]
+      ],
+      "configuration": {
+         "type": "object",
+         "title": "Extension Name",
+         "properties": {
+            "extension-name.useWarning": {
+               "type": "boolean",
+               "default": false,
+               "description": "Control whether to use warning on hello world command."
+            }
+         }
+      }
    },
    "scripts": {
       "vscode:prepublish": "npm run package",
