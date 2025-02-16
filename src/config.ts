@@ -36,8 +36,8 @@ export class Config {
       return this.workspaceConfig.get(Config.ConfigItem.UseWarning) ?? false;
    }
 
-   set useWarning(allow: boolean) {
-      this.workspaceConfig.update(Config.ConfigItem.UseWarning, allow, vscode.ConfigurationTarget.Global);
+   set useWarning(useWarning: boolean) {
+      this.workspaceConfig.update(Config.ConfigItem.UseWarning, useWarning, vscode.ConfigurationTarget.Global);
       this._onDidChangeConfig.fire([Config.ConfigItem.UseWarning]);
    }
 }
