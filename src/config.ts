@@ -13,7 +13,8 @@ export class Config {
       this.disposables.push(
          vscode.workspace.onDidChangeConfiguration((e) => {
             this.loadWorkspaceConfig();
-            if (e.affectsConfiguration(`${extensionName}.${Config.ConfigItem.UseWarning}`)) this._onDidChangeConfig.fire([Config.ConfigItem.UseWarning]);
+            const changedItems = Object.values(Config.ConfigItem).filter((item) => e.affectsConfiguration(`${extensionName}.${item}`));
+            if (changedItems.length) this._onDidChangeConfig.fire(changedItems);
          }),
       );
    }
